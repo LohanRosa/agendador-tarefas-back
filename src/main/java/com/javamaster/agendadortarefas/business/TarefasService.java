@@ -6,7 +6,7 @@ import com.javamaster.agendadortarefas.business.mapper.TarefaUpdateConverter;
 import com.javamaster.agendadortarefas.business.mapper.TarefasConverter;
 import com.javamaster.agendadortarefas.infrastructure.entity.TarefasEntity;
 import com.javamaster.agendadortarefas.infrastructure.enums.StatusNotificacaoEnum;
-import com.javamaster.agendadortarefas.infrastructure.exception.ResourceNotFoundException;
+import com.javamaster.agendadortarefas.infrastructure.exceptions.ResourceNotFoundException;
 import com.javamaster.agendadortarefas.infrastructure.repository.TarefasRepository;
 import com.javamaster.agendadortarefas.infrastructure.security.JwtUtil;
 import lombok.RequiredArgsConstructor;
