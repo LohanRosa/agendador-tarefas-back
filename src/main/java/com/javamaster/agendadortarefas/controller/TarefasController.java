@@ -33,9 +33,8 @@ public class TarefasController {
 
     @GetMapping
     public ResponseEntity<List<TarefasDTO>> buscarTarefasPorEmail(@RequestHeader("Authorization") String token) {
-
-        return ResponseEntity.ok(tarefasService.buscaTarefasPorEmail(token));
-
+        List<TarefasDTO> tarefas = tarefasService.buscaTarefasPorEmail(token);
+        return ResponseEntity.ok(tarefas);
     }
 
     @DeleteMapping
